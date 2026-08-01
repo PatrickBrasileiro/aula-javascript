@@ -1,1 +1,1 @@
-# aula-javascript
+# javascript
