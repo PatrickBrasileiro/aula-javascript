@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Bootstrap -->
+   
+</head>
+<body class="bg-light">
+
+    <div class="container mt-5">
+        <div class="card shadow p-4 text-center">
+            <h1 class="text-primary mb-3">Classificação de Idade</h1>
+
+            <script>
+
+            let nome = prompt(`Digite seu nome:`);
+            let idade = Number(prompt(`Digite sua idade:`));
+
+            if(idade < 11)
+                document.write(`<div class="alert alert-success">${nome}, sua classificação de idade é de um: Criança</div>`);
+            else if (idade === 12 && idade <17 )
+            {
+                document.write(`<div class="alert alert-warning">${nome}, sua classificação de idade é de um: Adolescente</div>`);
+            } 
+            else
+            {
+                document.write(`<div class="alert alert-danger">${nome}, sua classificação de idade é de um: Adulto</div>`);
+            }
+
+            </script>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

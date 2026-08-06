@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="alert alert-primary" role="alert">
+      <h2>Aula 4 - Boletim escolar - Atividade 03</h2>
+    </div>
+
+    <script>
+      let nome = prompt("Digite o nome do Aluno:");
+
+      let nota1 = Number(prompt("Digite a nota 1:"));
+
+      let nota2 = Number(prompt("Digite a nota 2:"));
+
+      let nota3 = Number(prompt("Digite a nota 3:"));
+
+      let media = (nota1 + nota2 + nota3) / 3;
+
+      let situacao
+
+      if(media >= 7){
+        situacao = "Aprovado";
+      } else if (media < 5){
+        situacao = "Reprovado"
+      }
+      else{
+        situacao = "Recuperação"
+      }
+
+    //   console.log(`${media.toFixed(2)}`);
+
+      // document.write(` ${media.toFixed}
+
+      document.write(`
+<div class="shadow p-3 mb-5 bg-body-tertiary rounded">
+
+<table  class="table table-hover table-dark table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Nome do Aluno</th>
+      <th scope="col">Nota 1</th>
+      <th scope="col">Nota 2</th>
+      <th scope="col">Nota 3</th>
+            <th scope="col">Média Final</th>
+            <th scope="col">Situação</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">${nome}</th>
+      <td>${nota1}</td>
+      <td>${nota2}</td>
+      <td>${nota3}</td>
+      <td>${media.toFixed(2)}</td>
+      <td>${situacao}</td>
+      
+    </tr>
+    
+   
+  </tbody>
+</table>
+</div>
+
+`);
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
