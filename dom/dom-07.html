@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+<body>
+
+<!-- não é boas praticas fazer esse esquema o certo é ter um css separado aqui está junto com javascript -->
+
+  <div id="caixa">JavaScript + DOM</div>
+ 
+  <script>
+    const caixa = document.getElementById('caixa');
+ 
+    caixa.textContent = 'Texto alterado pelo JavaScript';
+    caixa.style.color = 'blue';
+    caixa.style.fontSize = '24px';
+    caixa.style.backgroundColor = '#e6f0ff';
+  </script>
+ 
+</body>
+</html>
+ 
